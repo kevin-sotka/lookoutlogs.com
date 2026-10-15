@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Lookout Logs</title>
+  <meta name="description" content="Drew Silva's research notes on his father's fire lookout logbooks, and the lights they record along the Cascades from Mount Baker to Crater Lake.">
+  <meta name="theme-color" content="#070b13">
+  <meta property="og:title" content="The Lookout Logs">
+  <meta property="og:description" content="A box of fire lookout logbooks, a small mark that keeps showing up, and lights moving along the Cascades, one mountain at a time.">
+  <meta property="og:image" content="img/mark.jpg">
+  <link rel="icon" href="img/mark.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=IBM+Plex+Mono:wght@400;500&family=Newsreader:ital,opsz,wght@0,6..72,300..600;1,6..72,300..500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<!-- Note to self: keep this page simple. People can tell when you're trying too hard. -->
+
+<header class="sky sky--full" data-sky>
+  <canvas class="sky__canvas" aria-hidden="true"></canvas>
+  <nav class="topnav" aria-label="Main">
+    <a class="brand" href="index.html"><svg viewBox="0 0 16 22" aria-hidden="true"><circle cx="8" cy="15" r="5" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M8 10V1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>The Lookout Logs</a>
+    <ul>
+      <li><a href="logs.html">The Logs</a></li>
+      <li><a href="#route">The Route</a></li>
+      <li><a href="post.html">The Post</a></li>
+      <li><a href="line.html">The Line</a></li>
+    </ul>
+  </nav>
+
+  <div class="hero">
+    <p class="label label--light">Field notes &middot; Mount Baker to Crater Lake</p>
+    <h1 class="hero__title">The Lookout <em>Logs</em></h1>
+    <p class="hero__lede">My father kept the logbooks in fire lookouts along the Cascades. In them there&rsquo;s a small mark, the same one, summer after summer. And next to it, he wrote about lights.</p>
+    <div class="hero__actions">
+      <a class="btn btn--light" href="#welcome"><span class="btn-dot" aria-hidden="true"></span>Hear the welcome</a>
+      <a class="textlink-light" href="post.html">Read the post</a>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <section class="section section--paper torn" id="welcome">
+    <div class="wrap welcome">
+      <div class="welcome__side">
+      <div class="welcome__head">
+        <p class="label">Recording 00 &middot; Welcome</p>
+        <h2>Thanks for finding this.</h2>
+      </div>
+
+      <div class="player" data-player data-src="audio/welcome.mp3" data-length="70">
+        <button class="player__btn" type="button" aria-label="Play the welcome recording">
+          <svg class="i-play" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 4.5v15l12.5-7.5z" fill="currentColor"/></svg>
+          <svg class="i-pause" viewBox="0 0 24 24" aria-hidden="true"><path d="M6.5 4.5h4v15h-4zM13.5 4.5h4v15h-4z" fill="currentColor"/></svg>
+        </button>
+        <div>
+          <div class="player__meta"><span>Drew Silva</span><span class="player__time">0:00 / 1:10</span></div>
+          <div class="player__bars" aria-hidden="true"></div>
+        </div>
+        <p class="player__status" aria-live="polite"></p>
+      </div>
+      </div>
+
+      <article class="sheet transcript" aria-labelledby="transcript-label">
+        <p class="label" id="transcript-label">Transcript</p>
+        <p>Hi. Thanks for, um&hellip; thanks for finding this.</p>
+        <p>My name is Drew Silva. This is a research project, and right now it&rsquo;s mostly a cardboard box.</p>
+        <p>My dad worked fire lookouts in the Cascades, back in the late sixties and early seventies. A while ago he handed me his old logbooks. He didn&rsquo;t really say why. Most of what&rsquo;s in them is what you&rsquo;d expect. Weather. Smoke reports. Who hiked up, and when.</p>
+        <p>But there&rsquo;s a mark. A small one, the same one, showing up summer after summer. And next to it, he wrote about lights. Lights moving along the range, one mountain at a time.</p>
+        <p>So I&rsquo;m going to follow them. North to south, from Mount Baker down to Crater Lake. I&rsquo;ll keep my notes here as I go, and the recordings, too.</p>
+        <p>If you worked a lookout&hellip; or someone in your family did&hellip; or if you&rsquo;ve ever seen something from up high that you couldn&rsquo;t explain, I&rsquo;d really like to hear from you. There&rsquo;s a <a href="line.html">way to leave me a message</a> on this page.</p>
+        <p>Okay. That&rsquo;s the project. Thanks for listening.</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="section section--paper2" id="note">
+    <div class="wrap">
+      <!-- DRAFT for Kevin's approval: Drew's home note. -->
+      <article class="notebook">
+        <h2>A note before you start</h2>
+        <p>I should say up front that I&rsquo;m not a historian. I&rsquo;m a guy with a box of my dad&rsquo;s old logbooks and more questions than I expected to have.</p>
+        <p>My father, Abe Silva, worked fire lookouts in the Cascades from 1969 to 1974, a few years before I was born. He spent those summers alone in glass cabs on top of mountains, watching for smoke, writing down the weather, and taking a bearing whenever something burned.</p>
+        <p>Most of what he wrote is the job. But there&rsquo;s a small mark that keeps showing up, usually at night, and usually near a few words about lights. I&rsquo;d like to understand what he was looking at. If I&rsquo;m honest, I&rsquo;d also like to understand him a little better.</p>
+        <p>So this is where I&rsquo;ll keep my notes, one mountain at a time, north to south. Each stop gets a log entry with what I found, the logbook pages that matter, and sources for the history, because the history here is real and I want to get it right.</p>
+        <p class="sig">Drew</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="section section--paper" id="mark">
+    <div class="wrap mark-feature">
+      <figure class="scan">
+        <img src="img/mark.jpg" width="1200" height="800" alt="A pencil mark on a logbook page: a small circle with a short line standing up from the top, followed by the numbers 317 and 03:14.">
+        <figcaption>From one of my father&rsquo;s logbooks</figcaption>
+      </figure>
+      <div>
+        <p class="label">The mark</p>
+        <p class="quote-desc">A little circle with a line standing up out of it, like a pin, and then a number and a time.</p>
+        <p>It isn&rsquo;t in any lookout manual I&rsquo;ve found. If you&rsquo;ve seen it before, in a logbook, a notebook, or the margin of a map, I&rsquo;d really like to know.</p>
+        <p class="annot">seen this before?
+          <svg viewBox="0 0 60 34" aria-hidden="true"><path d="M2 8c14 18 32 22 50 14m0 0l-8-7m8 7l-10 4" fill="none" stroke="#5a4f43" stroke-width="2" stroke-linecap="round"/></svg>
+        </p>
+        <a class="btn" href="post.html">Read the post</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section route" id="route" data-route>
+    <!-- Bearings from two lookouts cross at one point. That's the whole trick. Remember that. -->
+    <div class="wrap">
+      <p class="label label--light">The route</p>
+      <h2>Ten stops, north to south</h2>
+      <p class="route__intro">From Mount Baker down the volcanic spine of the Cascades to Crater Lake, the place where a mountain used to be. Each stop lights up here when its log is posted.</p>
+      <div class="route__grid">
+        <div class="route__map"></div>
+        <ol class="route__list" aria-label="Stops on the route"></ol>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--paper2">
+    <div class="wrap cards">
+      <div class="card">
+        <p class="label">Newest log</p>
+        <h3>Nothing yet</h3>
+        <p>The first entry is Mount Baker. It will have my field notes, the logbook pages that matter, the sources, and a full transcript of the recording.</p>
+        <div class="empty-log">Log 01 &middot; Mount Baker &middot; November 23</div>
+      </div>
+
+      <div class="card card--dark" data-listen-block>
+        <p class="label">Listen</p>
+        <h3>Listen to the recordings</h3>
+        <p class="listen-note">The first recording goes up November 9.</p>
+        <ul class="listen">
+          <li><a class="is-off" data-listen="apple" href="#" aria-disabled="true">Apple Podcasts <span aria-hidden="true">&rarr;</span></a></li>
+          <li><a class="is-off" data-listen="spotify" href="#" aria-disabled="true">Spotify <span aria-hidden="true">&rarr;</span></a></li>
+          <li><a class="is-off" data-listen="rss" href="#" aria-disabled="true">RSS <span aria-hidden="true">&rarr;</span></a></li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <p class="label">Follow the research</p>
+        <h3>Get a note when there&rsquo;s a new log</h3>
+        <p>Just an email when something new goes up. Nothing else.</p>
+        <form class="follow" data-follow data-source="home" novalidate>
+          <label class="visually-hidden" for="follow-email">Email address</label>
+          <div class="field-row">
+            <input class="input" id="follow-email" name="email" type="email" autocomplete="email" placeholder="you@example.com" required>
+            <button class="btn" type="submit">Send me a note</button>
+          </div>
+          <label class="hp" aria-hidden="true">Website <input name="website" tabindex="-1" autocomplete="off"></label>
+          <p class="follow__msg" aria-live="polite"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="wrap footer__inner">
+    <svg class="footer__mark" viewBox="0 0 16 22" aria-hidden="true"><circle cx="8" cy="15" r="5" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M8 10V1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+    <p class="footer__label">The Lookout Logs is a work of fiction from Meatbag Made. Our host&rsquo;s voice is synthetic.</p>
+    <nav aria-label="Footer"><a href="about.html">About</a><a href="https://meatbagmade.com">Meatbag Made</a></nav>
+  </div>
+</footer>
+
+<script src="js/config.js"></script>
+<script src="js/site.js"></script>
+</body>
+</html>
