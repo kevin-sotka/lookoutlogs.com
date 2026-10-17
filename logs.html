@@ -5,11 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>The Logs &middot; The Lookout Logs</title>
   <meta name="description" content="One entry for each stop from Mount Baker to Crater Lake: field notes, logbook pages, sources, and full transcripts.">
-  <meta name="theme-color" content="#070b13">
+  <meta name="theme-color" content="#0a0f17">
   <link rel="icon" href="img/mark.svg" type="image/svg+xml">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=IBM+Plex+Mono:wght@400;500&family=Newsreader:ital,opsz,wght@0,6..72,300..600;1,6..72,300..500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -19,38 +16,35 @@
   <nav class="topnav" aria-label="Main">
     <a class="brand" href="index.html"><svg viewBox="0 0 16 22" aria-hidden="true"><circle cx="8" cy="15" r="5" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M8 10V1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>The Lookout Logs</a>
     <ul>
-      <li><a href="logs.html" aria-current="page">The Logs</a></li>
-      <li><a href="index.html#route">The Route</a></li>
-      <li><a href="post.html">The Post</a></li>
-      <li><a href="line.html">The Line</a></li>
+      <li><a href="logs.html" aria-current="page">Logs</a></li>
+      <li><a href="index.html#route">Map</a></li>
+      <li><a href="post.html">First post</a></li>
+      <li><a href="line.html">Leave a message</a></li>
+      <li><a href="about.html">About</a></li>
     </ul>
   </nav>
   <div class="page-head">
-    <p class="label label--light">The Logs</p>
-    <h1>One entry for each stop</h1>
-    <p>My field notes from each mountain, the logbook pages that matter, sources for the history, and a full transcript of each recording.</p>
+    <h1>The logs</h1>
+    <p>There&rsquo;ll be one entry for each stop, with my field notes, scans of the logbook pages that matter, sources for the history, and a transcript of the recording.</p>
   </div>
 </header>
 
-<main class="section section--paper torn">
-  <div class="wrap narrow">
+<main class="section">
+  <div class="wrap"><div class="text">
     <ol class="ledger" data-log-index aria-label="Log entries"></ol>
 
-    <div class="card" style="margin-top:56px">
-      <p class="label">Follow the research</p>
-      <h3>Get a note when there&rsquo;s a new log</h3>
-      <p>Just an email when something new goes up. Nothing else.</p>
-      <form class="follow" data-follow data-source="logs" novalidate>
-        <label class="visually-hidden" for="follow-email">Email address</label>
-        <div class="field-row">
-          <input class="input" id="follow-email" name="email" type="email" autocomplete="email" placeholder="you@example.com" required>
-          <button class="btn" type="submit">Send me a note</button>
-        </div>
-        <label class="hp" aria-hidden="true">Website <input name="website" tabindex="-1" autocomplete="off"></label>
-        <p class="follow__msg" aria-live="polite"></p>
-      </form>
-    </div>
-  </div>
+    <h2>Email updates</h2>
+    <p>If you&rsquo;d like, I&rsquo;ll send you an email whenever a new entry goes up. That&rsquo;s all I&rsquo;ll use your address for.</p>
+    <form class="follow" data-follow data-source="logs" novalidate>
+      <label class="visually-hidden" for="follow-email">Email address</label>
+      <div class="field-row">
+        <input class="input" id="follow-email" name="email" type="email" autocomplete="email" placeholder="you@example.com" required>
+        <button class="btn" type="submit">Sign me up</button>
+      </div>
+      <label class="hp" aria-hidden="true">Website <input name="website" tabindex="-1" autocomplete="off"></label>
+      <p class="follow__msg" aria-live="polite"></p>
+    </form>
+  </div></div>
 </main>
 
 <footer class="footer">

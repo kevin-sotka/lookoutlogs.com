@@ -89,7 +89,7 @@
       b.fillStyle = haze; b.fillRect(0, 0, W, H);
 
       // Stars.
-      var count = Math.min(520, Math.round(W * H / 2600));
+      var count = Math.min(300, Math.round(W * H / 4800));
       stars = [];
       for (var i = 0; i < count; i++) {
         var y = Math.pow(rnd(), 1.5) * H * 0.78;

@@ -3,13 +3,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>The Line &middot; The Lookout Logs</title>
+  <title>Leave a message &middot; The Lookout Logs</title>
   <meta name="description" content="Worked a fire lookout, camped high, or saw something you couldn't explain? Leave Drew a voice message.">
-  <meta name="theme-color" content="#070b13">
+  <meta name="theme-color" content="#0a0f17">
   <link rel="icon" href="img/mark.svg" type="image/svg+xml">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=IBM+Plex+Mono:wght@400;500&family=Newsreader:ital,opsz,wght@0,6..72,300..600;1,6..72,300..500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -19,25 +16,24 @@
   <nav class="topnav" aria-label="Main">
     <a class="brand" href="index.html"><svg viewBox="0 0 16 22" aria-hidden="true"><circle cx="8" cy="15" r="5" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M8 10V1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>The Lookout Logs</a>
     <ul>
-      <li><a href="logs.html">The Logs</a></li>
-      <li><a href="index.html#route">The Route</a></li>
-      <li><a href="post.html">The Post</a></li>
-      <li><a href="line.html" aria-current="page">The Line</a></li>
+      <li><a href="logs.html">Logs</a></li>
+      <li><a href="index.html#route">Map</a></li>
+      <li><a href="post.html">First post</a></li>
+      <li><a href="line.html" aria-current="page">Leave a message</a></li>
+      <li><a href="about.html">About</a></li>
     </ul>
   </nav>
   <div class="page-head">
-    <p class="label label--light">The Line</p>
     <h1>Leave me a message</h1>
   </div>
 </header>
 
-<main class="section section--paper torn">
+<main class="section">
   <div class="wrap line-grid">
 
     <div>
-      <p class="label">From Drew</p>
       <p>If you worked a fire lookout, or someone in your family did, or if you&rsquo;ve camped high or climbed at night and seen something you couldn&rsquo;t explain, I&rsquo;d really like to hear about it.</p>
-      <p>You can record a message right here, up to three minutes long. Take your time. It doesn&rsquo;t have to be polished, and it doesn&rsquo;t have to make sense. Some of the best things in my dad&rsquo;s logbooks don&rsquo;t make sense either.</p>
+      <p>You can record a message right here, up to three minutes long. Don&rsquo;t worry about getting it right the first time, since you can listen back and record it again before you send it.</p>
       <p>Please leave out other people&rsquo;s full names. If a story belongs to someone else, tell me about it and I&rsquo;ll ask whether they&rsquo;d like to talk.</p>
     </div>
 
@@ -45,8 +41,8 @@
       <noscript><p>The recorder needs JavaScript turned on.</p></noscript>
 
       <form class="step" data-step="email" novalidate>
-        <span class="step__num">1 &middot; Your email</span>
-        <p style="font-size:1rem;color:var(--ink-soft)">So I can write back if I have a question.</p>
+        <span class="step__num">1. Your email</span>
+        <p class="small">So I can write back if I have a question.</p>
         <label class="visually-hidden" for="line-email">Email address</label>
         <div class="field-row">
           <input class="input" id="line-email" name="email" type="email" autocomplete="email" placeholder="you@example.com" required>
@@ -57,7 +53,7 @@
       </form>
 
       <div class="step" data-step="consent" hidden>
-        <span class="step__num">2 &middot; Before you record</span>
+        <span class="step__num">2. Before you record</span>
         <div class="consent">
           <h3>A plain note, outside the story</h3>
           <ul>
@@ -72,7 +68,7 @@
       </div>
 
       <div class="step" data-step="record" hidden>
-        <span class="step__num">3 &middot; Record</span>
+        <span class="step__num">3. Record</span>
         <div class="recorder">
           <div class="recorder__screen">
             <canvas aria-hidden="true"></canvas>
@@ -95,8 +91,8 @@
       </div>
 
       <div class="step thanks" data-step="thanks" hidden tabindex="-1">
-        <h3>Got it. Thank you.</h3>
-        <p>Really. I&rsquo;ll listen to it soon, and if I have a question, I&rsquo;ll write to you at the address you gave me.</p>
+        <h3>Thank you, it came through.</h3>
+        <p>I&rsquo;ll listen to it soon, and if I have a question I&rsquo;ll write to the address you gave me.</p>
         <p>If you think of something else later, you&rsquo;re welcome to leave another one.</p>
       </div>
     </div>

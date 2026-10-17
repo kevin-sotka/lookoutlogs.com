@@ -52,7 +52,7 @@
   }
 
   function drawGrid(w, h) {
-    ctx.fillStyle = '#05080e'; ctx.fillRect(0, 0, w, h);
+    ctx.fillStyle = '#0b1017'; ctx.fillRect(0, 0, w, h);
     ctx.strokeStyle = 'rgba(120,150,190,0.08)'; ctx.lineWidth = 1;
     for (var x = 0; x < w; x += 24) { ctx.beginPath(); ctx.moveTo(x + 0.5, 0); ctx.lineTo(x + 0.5, h); ctx.stroke(); }
     for (var y = 0; y < h; y += 24) { ctx.beginPath(); ctx.moveTo(0, y + 0.5); ctx.lineTo(w, y + 0.5); ctx.stroke(); }
@@ -62,7 +62,7 @@
     var w = canvas.clientWidth, h = canvas.clientHeight;
     drawGrid(w, h);
     if (peaks) return drawPeaks(w, h);
-    ctx.strokeStyle = 'rgba(242,180,94,0.45)'; ctx.lineWidth = 1.5;
+    ctx.strokeStyle = 'rgba(160,185,212,0.45)'; ctx.lineWidth = 1.5;
     ctx.beginPath(); ctx.moveTo(0, h / 2); ctx.lineTo(w, h / 2); ctx.stroke();
   }
 
@@ -71,24 +71,23 @@
     var data = new Uint8Array(analyser.fftSize);
     analyser.getByteTimeDomainData(data);
     drawGrid(w, h);
-    ctx.strokeStyle = '#f2b45e'; ctx.lineWidth = 2;
-    ctx.shadowColor = 'rgba(242,180,94,0.7)'; ctx.shadowBlur = 8;
+    ctx.strokeStyle = '#a0b9d4'; ctx.lineWidth = 2;
     ctx.beginPath();
     for (var i = 0; i < data.length; i++) {
       var x = (i / (data.length - 1)) * w;
       var y = h / 2 + ((data[i] - 128) / 128) * (h * 0.45);
       if (i) ctx.lineTo(x, y); else ctx.moveTo(x, y);
     }
-    ctx.stroke(); ctx.shadowBlur = 0;
+    ctx.stroke();
     // How much of the three minutes is used.
-    ctx.fillStyle = 'rgba(242,180,94,0.18)';
+    ctx.fillStyle = 'rgba(160,185,212,0.25)';
     ctx.fillRect(0, h - 4, w * Math.min(1, seconds / MAX_SECONDS), 4);
     raf = requestAnimationFrame(drawLive);
   }
 
   function drawPeaks(w, h) {
     var n = peaks.length, bw = w / n;
-    ctx.fillStyle = 'rgba(242,180,94,0.75)';
+    ctx.fillStyle = 'rgba(160,185,212,0.8)';
     for (var i = 0; i < n; i++) {
       var ph = Math.max(1.5, peaks[i] * h * 0.85);
       ctx.fillRect(i * bw + 0.5, (h - ph) / 2, Math.max(1, bw - 1), ph);
