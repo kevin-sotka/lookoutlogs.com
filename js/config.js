@@ -2,7 +2,7 @@
 window.LOOKOUT = {
   // Google Apps Script web app URL for The Line and the updates list (see website/apps-script/).
   // While empty, the forms say the line isn't connected yet.
-  endpoint: '',
+  endpoint: 'https://script.google.com/macros/s/AKfycbxeGbPWP_p8EniHQcz3TFcDIep6f2Rbnd-0Q_gqgXK5F_DlCNbIrAsDHi4ckH9rkmCBCA/exec',
 
   // Flip to true on Nov 9 when the trailer is live. Switches on the Listen links.
   trailerLive: false,
